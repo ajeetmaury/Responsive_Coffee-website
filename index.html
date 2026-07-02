@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Coffee Website</title>
 </head>
 <body>
     <!-- Header / Navbar -->
     <header>
-        <div class="navbar section-content">
+        <nav class="navbar section-content">
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">☕ Coffee</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -33,7 +36,8 @@
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
-        </div>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
     </header>
 
     <main>
@@ -55,6 +59,20 @@
                 </div>
             </div>
          </section>
+
+         <!-- About Section  -->
     </main>
 </body>
+
+<script>
+    const menuOpenButton = document.querySelector("#menu-open-button");
+    const menuCloseButton = document.querySelector("#menu-close-button");
+
+    menuOpenButton.addEventListener("click", () => {
+        document.body.classList.toggle("show-mobile-menu");
+    })
+
+    menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+</script>
+
 </html>
