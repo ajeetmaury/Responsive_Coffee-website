@@ -284,6 +284,9 @@ header .navbar{
     font-size: var(--font-size-m);
 }
 
+/* Testimonials Section */
+
+
 /* Responsive media query code for max width 1024px */
 @media screen and (max-width: 1024px){
     .menu-section .menu-list{
