@@ -337,6 +337,8 @@ header .navbar{
     color: var(--primary-color);
 }
 
+/* Styling Gallery Section */
+
 
 /* Responsive media query code for max width 1024px */
 @media screen and (max-width: 1024px){
@@ -472,7 +474,7 @@ header .navbar{
     .testimonials-section .slider-wrapper{
         margin: 0 0 30px;
     }
-    
+
     .testimonials-section .swiper-slide-button{
         display: none;
     }
